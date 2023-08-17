@@ -1,0 +1,3 @@
+when destructing a object we need to destructure the object's property with the strict naming
+and in the long run it is harder to do it compared it with the array
+that is why react uses array destructing.
