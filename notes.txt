@@ -1,3 +1,35 @@
 when destructing a object we need to destructure the object's property with the strict naming
 and in the long run it is harder to do it compared it with the array
 that is why react uses array destructing.
+
+What are side effects?
+side effects is what makes pure functions impure.
+
+Pure functions have side effects -
+ - pure funcntions always return the same output regarless of how many times it gets invoked.
+Impure functions do have side effects -
+ - peform side effect
+ - invoke console.log, invoke fetch, invoke geolocation
+ - sideeffect : => something external to a funcntion
+
+ so how do we deal with the issue of impure functions ? => it's all about containing the impure actions inside their own special areas.
+
+
+ FOur rules of react hooks
+ - only call hooks from a React component function
+ - only call hooks at the top level
+ - call multiple state or effect hooks
+ - make multiple hook calls in the same sequence
+
+
+ When to choose useReducer vs useState
+The useState hook is best used on less complex data.
+
+While it's possible to use any kind of a data structure when working with useState, it's better to use it with primitive data types, such as strings, numbers, or booleans.
+The useReducer hook is best used on more complex data, specifically, arrays or objects.
+
+While this rule is simple enough, there are situations where you might be working with a simple object and still decide to use the useState hook.
+
+
+
+
